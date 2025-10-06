@@ -183,7 +183,6 @@ main {
 
 .map-container:hover {
   box-shadow: 0 15px 50px rgba(0, 0, 0, 0.7);
-  transform: translateY(-2px);
 }
 
 .inner-map {

@@ -185,9 +185,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const gauntletsPromise = fetch('gauntlets.json').then(r => r.json()).then(data => { gauntletsData = data; console.log('Gauntlets JSON loaded:', data.length); });
 
   Promise.all([shieldsPromise, gauntletsPromise]).then(() => {
-    document.getElementById('shieldsOverlay').addEventListener('click', handleShieldClick);
-    document.getElementById('gauntletsOverlay').addEventListener('click', handleGauntletClick);
-    document.getElementById('baseMap').addEventListener('click', handleLandClick);
     updateMap();
   });
 
