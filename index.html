@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Solace Land Placement</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <img src="images/knights-logo.png" alt="Knights Logo" class="logo">
+    <h1>Solace Land Placement</h1>
+  </header>
+
+ <div class="controls">
+  <div class="section-label">Sector</div>
+  <div class="toggle-group" id="sectorToggle">
+    <input type="radio" id="sectorS1" name="sector" value="s1" checked>
+    <label for="sectorS1" class="toggle-label sector-label">Solace 1</label>
+
+    <input type="radio" id="sectorS2" name="sector" value="s2">
+    <label for="sectorS2" class="toggle-label sector-label">Solace 2</label>
+  </div>
+
+  <div class="section-label">Overlay</div>
+  <div class="toggle-group" id="overlayToggle">
+    <input type="radio" id="overlayShields" name="overlay" value="shields" checked>
+    <label for="overlayShields" class="toggle-label">Shields</label>
+
+    <input type="radio" id="overlayGauntlets" name="overlay" value="gauntlets">
+    <label for="overlayGauntlets" class="toggle-label">Gauntlets</label>
+
+    <input type="radio" id="overlayCombined" name="overlay" value="combined">
+    <label for="overlayCombined" class="toggle-label">Combined</label>
+
+    <input type="radio" id="overlayDistrict" name="overlay" value="district">
+    <label for="overlayDistrict" class="toggle-label">District</label>
+  </div>
+</div>
+
+  <main>
+    <div class="map-container" id="mapContainer">
+      <div class="inner-map" id="innerMap">
+        <img id="baseMap" class="layer" alt="Base Map">
+        <img id="shieldsOverlay" class="layer" alt="Shields">
+        <img id="gauntletsOverlay" class="layer" alt="Gauntlets">
+      </div>
+    </div>
+
+    <aside class="sidebar">
+      <h2>Guild Land Info</h2>
+      <div id="landDetails">
+        <p>Select a sector and overlays. Click on the map for combined land details, or on shields/gauntlets for specific info.</p>
+      </div>
+    </aside>
+  </main>
+
+  <script src="main.js"></script>
+</body>
+</html>
